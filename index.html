@@ -11,7 +11,7 @@
       --bg:#0f1724;
       --card:#0b1220;
       --muted:#9aa7b7;
-      --accent:#e11d23; /* red accent */
+      --accent:#e11d23;
       --glass: rgba(255,255,255,0.03);
       --radius:14px;
       --maxw:950px;
@@ -21,12 +21,10 @@
     html,body{height:100%;margin:0;background:linear-gradient(180deg,#07101a 0%, #0f1724 100%);color:#e6eef6}
     .container{max-width:var(--maxw);margin:48px auto;padding:28px}
     header{display:flex;gap:18px;align-items:center}
-    .logo{width:72px;height:72px;border-radius:16px;background:var(--glass);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,0.6)}
-    .logo img{max-width:56px;max-height:56px;display:block}
     h1{font-size:28px;margin:0 0 4px}
     p.lead{margin:0;color:var(--muted)}
     .hero{display:flex;gap:28px;align-items:center;margin-top:28px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:22px;border-radius:var(--radius);box-shadow: 0 8px 30px rgba(2,6,23,0.6);flex:1}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:22px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.6);flex:1}
     .cta{margin-top:18px;display:flex;gap:12px;align-items:center}
     .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
     .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#dfe9f2}
@@ -41,10 +39,6 @@
 <body>
   <div class="container">
     <header>
-      <div class="logo" aria-hidden="true">
-        <!-- Local image path (transform to URL when you publish) -->
-        <img src="/mnt/data/A_flat_design_vector_illustration_features_a_to-do.png" alt="AI Todo logo (red, no text)" />
-      </div>
       <div>
         <h1>AI Todo</h1>
         <p class="lead">Privacy-first, on-device AI that organizes and prioritizes your tasks using the Four Quadrants of Time Management.</p>
@@ -57,26 +51,26 @@
         <p class="small">AI Todo helps you capture tasks fast, automatically categorizes them into urgency/importance quadrants, and gives concise, actionable insights — all processed locally on your device using the browser's on-device AI capabilities. No accounts. No cloud. No tracking.</p>
 
         <div class="cta">
-          <a class="btn" href="#" onclick="alert('Install from Chrome Web Store or load as unpacked extension')">Get the extension</a>
+          <a class="btn" href="#">Get the extension</a>
           <a class="btn secondary" href="privacy_policy.html">Privacy Policy</a>
         </div>
 
-        <div class="features" aria-hidden="false">
+        <div class="features">
           <div class="feature">
             <strong>On-device AI</strong>
             <div class="small">Uses the browser's LanguageModel API for analysis; data never leaves your device.</div>
           </div>
           <div class="feature">
             <strong>Four Quadrants</strong>
-            <div class="small">Auto-prioritization based on the classic urgent/important framework.</div>
+            <div class="small">Auto-prioritization based on the classic urgent/important productivity method.</div>
           </div>
           <div class="feature">
             <strong>Sync-friendly</strong>
             <div class="small">Stores tasks in Chrome storage for persistence across your Chrome profile.</div>
           </div>
           <div class="feature">
-            <strong>Accessible dashboard</strong>
-            <div class="small">Drag-and-drop dashboard for visual organization and re-ordering.</div>
+            <strong>Visual dashboard</strong>
+            <div class="small">Drag-and-drop interface for organizing tasks visually.</div>
           </div>
         </div>
       </div>
@@ -85,13 +79,10 @@
         <div class="card" role="complementary">
           <h3 style="margin-top:0">Quick demo</h3>
           <ol class="small" style="padding-left:18px;margin:8px 0 0">
-            <li>Add tasks quickly in the popup.</li>
-            <li>Click "Auto-prioritize" to let on-device AI assign quadrants.</li>
-            <li>Open the dashboard to drag and reorder tasks visually.</li>
+            <li>Add tasks in the popup.</li>
+            <li>Click "Auto-prioritize" to let AI assign quadrants.</li>
+            <li>Open the dashboard to reorganize via drag & drop.</li>
           </ol>
-          <div style="margin-top:14px">
-            <a class="btn" href="#" onclick="alert('Open demo')">Open demo</a>
-          </div>
         </div>
       </aside>
     </section>
@@ -100,16 +91,16 @@
       <div class="card">
         <h3 style="margin-top:0">Security & privacy highlights</h3>
         <ul class="small" style="margin:8px 0 0;padding-left:18px">
-          <li>No tracking, analytics, or user accounts.</li>
-          <li>All AI analysis runs locally via the browser's LanguageModel API; nothing is uploaded.</li>
-          <li>Tasks are stored in chrome.storage.sync and are removable by the user at any time.</li>
+          <li>No tracking, analytics, or accounts needed.</li>
+          <li>AI runs 100% on-device — nothing uploaded.</li>
+          <li>Tasks remain in your Chrome storage until deleted.</li>
         </ul>
       </div>
     </section>
 
     <footer>
-      <div class="small">Maintained by AI Todo — <a href="mailto:sujith8115@gmail.com">sujith8115@gmail.com</a></div>
-      <div class="small">See <a href="privacy_policy.html">Privacy Policy</a></div>
+      <div class="small">Contact: <a href="mailto:sujith8115@gmail.com">sujith8115@gmail.com</a></div>
+      <div class="small"><a href="privacy_policy.html">Privacy Policy</a></div>
     </footer>
   </div>
 </body>
