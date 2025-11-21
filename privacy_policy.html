@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Privacy Policy — AI Todo</title>
+  <meta name="description" content="AI Todo privacy policy — explains data collection, how AI is used on-device, storage, deletion, and contact information." />
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0b1220; --muted:#55606a; --accent:#e11d23; --card:#fbfcfd; --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{margin:0;background:linear-gradient(180deg,#f8fafc,#ffffff);color:var(--text);line-height:1.6}
+    .wrap{max-width:900px;margin:36px auto;padding:28px}
+    header{display:flex;gap:16px;align-items:center}
+    header img{width:56px;height:56px;border-radius:10px;object-fit:contain}
+    h1{margin:0;font-size:24px}
+    .intro{color:var(--muted);margin-top:10px}
+    section.card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 8px 30px rgba(11,18,32,0.04);margin-top:16px}
+    h2{margin-top:0}
+    a{color:var(--accent)}
+    .small{font-size:14px;color:var(--muted)}
+    ul{padding-left:20px}
+    pre{background:#f2f6f9;padding:12px;border-radius:8px;overflow:auto}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <img src="/mnt/data/A_flat_design_vector_illustration_features_a_to-do.png" alt="AI Todo logo">
+      <div>
+        <h1>Privacy Policy</h1>
+        <div class="intro small">Last updated: November 21, 2025</div>
+      </div>
+    </header>
+
+    <section class="card" aria-labelledby="summary">
+      <h2 id="summary">Summary</h2>
+      <p class="small">AI Todo is a Chrome extension focused on task management and productivity. We prioritize user privacy: the extension performs AI analysis on the user's device (via the browser's LanguageModel API), stores tasks in Chrome storage, and does not send user data to external servers or third parties.</p>
+    </section>
+
+    <section class="card" aria-labelledby="data-we-collect">
+      <h2 id="data-we-collect">Data we collect</h2>
+      <p class="small"><strong>Minimal and local:</strong></p>
+      <ul class="small">
+        <li><strong>Todos (user-entered text)</strong> — Short text items you create in the extension; may include reminders, notes, or task descriptions.</li>
+        <li><strong>Task metadata</strong> — Quadrant assignment (1–4), priorityIndex, and timestamps for ordering. These fields are used to display and persist the task list.</li>
+      </ul>
+      <p class="small">We do <em>not</em> collect email addresses, device identifiers, browsing history, location, or personally identifying information by default.</p>
+    </section>
+
+    <section class="card" aria-labelledby="how-we-store">
+      <h2 id="how-we-store">How and where data is stored</h2>
+      <p class="small">All data is stored locally in the user's Chrome profile using <code>chrome.storage.sync</code>. This enables persistence across the user's signed-in Chrome instances if sync is enabled. Data remains under the user's control and is not transmitted to any external servers by the extension.</p>
+
+      <p class="small"><strong>Note on synchronization:</strong> If the user has Chrome Sync enabled, the browser may sync extension storage across devices the user controls. This is managed by Google Chrome and not by AI Todo. If you prefer not to sync, you can disable Chrome Sync for extensions in your browser settings.</p>
+    </section>
+
+    <section class="card" aria-labelledby="ai-usage">
+      <h2 id="ai-usage">On-device AI & how it's used</h2>
+      <p class="small">AI Todo may use the browser’s on-device LanguageModel API (for example, <code>self.LanguageModel</code>) to:</p>
+      <ul class="small">
+        <li>Categorize tasks into the Four Quadrants (Urgent/Important).</li>
+        <li>Generate concise, actionable productivity insights and suggestions.</li>
+      </ul>
+      <p class="small"><strong>Important:</strong> When AI features are used, analysis occurs locally on the user's device. No task data or prompts are sent to our servers or third-party servers for processing. If your browser does not support the LanguageModel API, AI Todo uses a deterministic, rule-based fallback to provide categorization locally within the extension.</p>
+    </section>
+
+    <section class="card" aria-labelledby="data-sharing">
+      <h2 id="data-sharing">Third parties & data sharing</h2>
+      <p class="small">We do not share data with third parties. The extension does not include analytics, advertising, or telemetry. We do not sell user data.</p>
+      <p class="small">If you choose to export your tasks or share a screenshot of your dashboard manually, that content may be copied to the clipboard or included in a file you choose to share; such actions are initiated by you and are not performed by the extension automatically.</p>
+    </section>
+
+    <section class="card" aria-labelledby="cookies">
+      <h2 id="cookies">Cookies and tracking</h2>
+      <p class="small">AI Todo does not use cookies, third-party trackers, or fingerprinting. Any storage used is the browser extension storage space (<code>chrome.storage.sync</code>).</p>
+    </section>
+
+    <section class="card" aria-labelledby="user-rights">
+      <h2 id="user-rights">User control, deletion, and data portability</h2>
+      <ul class="small">
+        <li><strong>View & manage data:</strong> You can view and delete tasks from the extension UI at any time.</li>
+        <li><strong>Delete all data:</strong> Remove the extension or clear extension storage in Chrome's developer tools or settings to remove all stored tasks.</li>
+        <li><strong>Portability:</strong> If you need an export feature, contact support and we can provide an export tool or instructions.</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="security">
+      <h2 id="security">Security</h2>
+      <p class="small">We take a conservative security approach: data stays inside the user's browser environment, and we recommend users keep their browsers up to date. If you discover a security vulnerability, please report it to <a href="mailto:sujith8115@gmail.com">sujith8115@gmail.com</a> immediately.</p>
+    </section>
+
+    <section class="card" aria-labelledby="children">
+      <h2 id="children">Children</h2>
+      <p class="small">AI Todo is not specifically directed to children under 13. We do not knowingly collect information from children. If you believe a child under 13 has provided personal information through our extension, contact us and we will remove the data upon verification.</p>
+    </section>
+
+    <section class="card" aria-labelledby="legal">
+      <h2 id="legal">Legal Basis, jurisdiction & changes</h2>
+      <p class="small">This privacy policy is governed by applicable laws where the extension developer is located. We may update this policy from time to time; material changes will be indicated by a revised "Last updated" date. Continued use of the extension after changes implies consent to the revised policy.</p>
+    </section>
+
+    <section class="card" aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p class="small">For support, privacy requests, or general inquiries:</p>
+      <pre class="small">Email: sujith8115@gmail.com</pre>
+      <p class="small">We aim to respond to privacy or support requests within a reasonable timeframe.</p>
+    </section>
+
+    <footer>
+      <div class="small">AI Todo — Privacy Policy • If you need a printable copy of this policy or a privacy export, contact <a href="mailto:sujith8115@gmail.com">sujith8115@gmail.com</a>.</div>
+    </footer>
+  </div>
+</body>
+</html>
